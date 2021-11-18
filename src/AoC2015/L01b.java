@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class L01a {
+public class L01b {
 	private static String hiss;
 
 	public static void run(String ext) {
@@ -21,7 +21,10 @@ public class L01a {
 			} else {
 				level--;
 			}
+			if (level == -1) {
+				System.out.println("End up att floor -1 at position " + (a + 1));
+				break;
+			}
 		}
-		System.out.println("End up att floor " + level);
 	}
 }
